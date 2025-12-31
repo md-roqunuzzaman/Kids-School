@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand-normal {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.orange{
+    color: rgba(254, 163, 1, 1);
+}
+.skyblue{
+    color: rgba(1, 172, 253, 1);
+}
+.paste{
+    color: rgba(5, 212, 223, 1);
+}
+.blue{
+    color: rgba(93, 88, 239, 1);
+}
+.header{
+    margin: 20px 140px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.brand{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+.items{
+    display: flex;
+    
+}
+.list-item{
+    margin-left: 30px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.list-item a{
+    text-decoration: none;
+}
+.nav-right .contact-btn{
+    background-color: rgba(254, 163, 1, 1);
+    padding: 10px 60px;
+    border-radius: 8px;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    display: none !important;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    
+}
+
+.hero-content{
+    
+   max-width: 650px;
+}
+.hero-title{
+    font-size: 65px;
+    font-weight: bold;
+}
+.hero-des{
+    font-size: 20px;
+}
+.hero-btn{
+padding: 10px 47px;
+border-radius: 12px;
+font-size: 20px;
+font-weight: bold;
+background-color: black;
+color: #ffffff;
+}
+.hero-img img {
+    width: 500px; 
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* mobail responsive */
+@media screen and (max-width:576px){
+    .brand,.items,.contact-btn{
+        display: none;
+    }
+    .menu-icon{
+        display: block !important;
+    }
+     .header{
+        margin: 16px;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        align-items: center;
+       
+    }
+    .hero-content{
+        text-align: center;
+        margin: 0px auto;
+        
+    }
+    .hero-title{
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .hero-des{
+        font-size: 14px;
+        font-weight: 500;
+    }
+     .hero-img img {
+        width: 100%;
+        
+        margin-top: 20px;
+    }}
