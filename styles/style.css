@@ -5,7 +5,7 @@
   font-weight: 400;
   font-style: normal;
 }
-
+/* share style */
 .orange{
     color: rgba(254, 163, 1, 1);
 }
@@ -18,9 +18,12 @@
 .blue{
     color: rgba(93, 88, 239, 1);
 }
+
+
 .header{
     margin: 20px 140px;
 }
+/* navbar style */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -63,6 +66,7 @@
     cursor: pointer;
     display: none !important;
 }
+/* hero style */
 
 .hero{
     display: flex;
@@ -96,7 +100,167 @@ color: #ffffff;
     max-width: 100%;
     height: auto;
 }
+/* curriculum section style */
+.curriculum{
+    margin: 60px 140px;
+}
+.curriculum-title{
+    text-align: center;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px;
+    width: 100%;
+}
+.card{
+    box-shadow: 0 0 28.3 0.94 rgba(0, 0, 0, 0.05);
+   
+    padding: 55px 50px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+   
+    height:auto;
+}
+.card-img{
+    width: 100%;
+}
+#card1{
+    background: linear-gradient(
+        to bottom, 
+        rgba(222, 245, 255, 1) 0%, 
+        rgba(242, 251, 255, 0.39) 24%, 
+        rgba(255, 255, 255, 0) 40%
+    );
+   
+}
+.card1{ color: rgba(100, 200, 255, 1);}
+#card2{
+    background: linear-gradient(
+        to bottom,rgba(255, 244, 220, 1) 0%,rgba(255, 255, 255, 0) 40%
+    );
 
+}
+.card2{color: rgba(240, 170, 0, 1);}
+#card3{
+background: linear-gradient(
+        to bottom,rgba(238, 225, 255, 1) 0%,rgba(255, 255, 255, 0) 40%
+    );
+}
+.card3{color: rgba(135, 0, 255, 1);}
+.card-title{
+    color: rgba(32, 32, 32, 1);
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 32px;
+}
+.card-des{
+    color: rgba(128, 128, 128, 1);
+    font-family: 500;
+    margin: 32px 0px;
+}
+.slider{
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+    
+    
+}
+.slider i{
+    background-color: rgba(254, 163, 1, 1);
+    border-radius: 50%;
+    padding: 17px 22px;
+    color: #ffffff;
+    font-size: 24px;
+    
+}
+.fa-greater-than{
+margin-left: 10px;
+}
+
+/* story section style */
+.story{
+    margin: 80px 140px;
+    background-color: aqua;
+}
+.story-title{
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+}
+.story-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    
+}
+.story-cards img{
+    width: 100%;
+    border-top-left-radius:16px;border-top-right-radius:16px ;
+   
+}
+.card-text,.small-card h3{
+    padding: 30px;
+}
+.big-card,.small-card{
+    background-color: #ffffff;
+    border-radius:16px;
+}
+
+.small-card-container{
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.big-card-title{
+    margin: 60px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.big-card-des{
+    color: rgba(102, 102, 102, 1);
+    padding-right: 65px;
+}
+.story-btn button{
+    border-radius: 12px;
+    padding: 10px 60px;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.story-btn{
+    text-align: center;
+    margin-top: 80px;
+}
+.date-btn button{
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: rgba(60, 216, 232, 1);
+    color: #ffffff;
+    font-weight: 500px;
+    border: none;
+
+}
+#light-green{
+    background-color: rgba(149, 178, 38, 1);
+}
+#light-blue{
+    background-color: rgba(93, 88, 240, 1);
+}
+.img-wrapper{
+     position: relative;
+}
+.date-btn{
+    position: absolute;
+    bottom: -15px; 
+    left: 40px;
+}
 
 /* mobail responsive */
 @media screen and (max-width:576px){
@@ -133,4 +297,50 @@ color: #ffffff;
         width: 100%;
         
         margin-top: 20px;
-    }}
+    }
+    .cards{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .curriculum{
+
+    
+        margin: 0 20px;
+    }
+    .slider{
+        display: none;
+    }
+
+    /* story section */
+    .story{
+        margin: 40px 20px;
+    }
+     .story-cards{
+        grid-template-columns: 1fr; 
+    }
+    .big-card{
+        display: none;
+    }
+    .small-card-container{
+        
+        gap: 10px; 
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .small-card{
+        width: 100%;
+    }
+    .date-btn {
+       /* বাম থেকে একটু সরিয়ে আনুন */
+    }
+.date-btn button {
+        /* padding: 5px 10px !important; /* প্যাডিং অনেক কমানো হলো */
+        font-size: 10px !important;   /* ফন্ট ছোট করা হলো */
+        width: auto;
+        white-space: nowrap; */
+    }
+    
+}
