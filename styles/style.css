@@ -79,6 +79,14 @@ margin: 0;}
     cursor: pointer;
     display: none !important;
 }
+
+.marquee-admission {
+    
+   color: brown;
+   font-size: 24px;
+   font-weight: bold;
+}
+
 /* hero style */
 
 .hero{
